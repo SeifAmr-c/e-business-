@@ -1,0 +1,191 @@
+:root {
+  --primary-color: #1D1D1F;
+  --primary-color-hover: #2D2D39;
+  --accent-color: #EF4444;
+  --background-color: #1D1D1F;
+  --text-color: #FFFFFF;
+  --heading-color: #F4F4F5;
+  --border-color: #2D2D2F;
+  --success-color: #43A047;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Montserrat', 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--background-color);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background: var(--primary-color);
+}
+.container > div {
+  width: 100%;
+}
+.container .poster {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: linear-gradient(135deg, #1B1B25 0%, #2D2D39 100%);
+  padding: 1em;
+  position: relative;
+}
+.container .poster::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(255,193,7,0.2) 0%, rgba(0,0,0,0) 70%);
+}
+.container .poster img {
+  height: 75%;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  margin-top: 4em;
+  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.3));
+  position: relative;
+  z-index: 2;
+}
+.login-form {
+  padding: 1.5em;
+  background: var(--primary-color);
+}
+.login-form > h1 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--heading-color);
+  font-weight: 700;
+  text-align: center;
+}
+.login-form .form {
+  padding: 0.5em;
+  align-self: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.login-form .form .title {
+  font-size: 2rem;
+  margin-bottom: .2em;
+  color: var(--heading-color);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+.login-form .form .description {
+  font-size: 0.9rem;
+  color: var(--text-color);
+  margin-bottom: 1.5em;
+  opacity: 0.8;
+  font-weight: 400;
+}
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: .3em;
+  margin-bottom: 0.8em;
+}
+.form-control label {
+  font-weight: 500;
+  color: var(--text-color);
+  font-size: 0.8rem;
+}
+.form-control input {
+  padding: 0.8em;
+  outline: none;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-color);
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+.form-control input:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.form-actions .remember-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5em;
+}
+.form-actions .remember-me input[type="checkbox"] {
+  accent-color: var(--accent-color);
+  width: 16px;
+  height: 16px;
+}
+.link {
+  color: var(--accent-color);
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+  text-decoration: none;
+}
+.link:hover {
+  color: #f87171;
+  text-decoration: underline;
+}
+.primary-btn {
+  background: var(--accent-color);
+  color: white;
+  outline: none;
+  border: 0;
+  padding: 0.8em;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.primary-btn:hover {
+  background: #f87171;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+.primary-btn:active {
+  transform: translateY(0);
+}
+.no-account {
+  display: flex;
+  gap: .5em;
+  justify-content: center;
+  margin: 1.5em 0 0;
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: var(--text-color);
+}
+@media screen and (max-width: 600px) {
+  .container {
+    box-shadow: none;
+    max-width: 100%;
+  }
+  body {
+    background-color: var(--background-color);
+  }
+}

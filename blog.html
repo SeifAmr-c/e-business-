@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montre Monde - Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/7a642f1095.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body class="bg-[#1D1D1F] font-[Montserrat] p-0 m-0 overflow-x-hidden">
+    <nav class="w-full p-4 flex justify-between items-center">
+        <h1 class="text-[#F4F4F5] font-bold text-2xl font-mixone">Montre Monde</h1>
+        <ul class="flex items-center">
+            <li><a class="p-3 text-[#f87171] hover:text-[#f87171] transition delay-100 ease font-medium" href="blog.html">Blog</a></li>
+            <li><a class="p-3 text-[#F4F4F5] hover:text-[#f87171] transition delay-100 ease font-medium" href="contact.html">Contact us</a></li>
+            <li><a class="p-3 text-[#F4F4F5] hover:text-[#f87171] transition delay-100 ease font-medium" href="products.html">Products</a></li>
+            <li id="cart"><a class="p-3 text-[#F4F4F5] hover:text-[#f87171] transition delay-100 ease" href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+    </nav>
+    <div id="cart-overlay" class="hidden fixed top-0 right-0 w-80 h-screen bg-[#2A2A2D] z-10 p-5 overflow-y-auto shadow-lg text-[#F4F4F5]">
+        <div class="flex justify-between items-center mb-6">
+            <h2 class="text-xl font-bold">Your Cart</h2>
+            <button id="close-cart" class="text-[#F4F4F5] hover:text-[#f87171]">
+                <i class="fa-solid fa-times text-xl"></i>
+            </button>
+        </div>
+        <div id="vasnihed">
+            <div class="flex items-center mb-4 pb-4 ">
+                <img src="images/patek3.jpg" alt="Watch" class="w-16 h-16 object-cover mr-4">
+                <div class="flex-1">
+                    <h3 class="font-medium">5270/1R</h3>
+                    <p class="text-sm text-gray-400">Rose Gold</p>
+                    <p class="font-bold">$499,999.00</p>
+                </div>
+                <button class="text-[#f87171]" id="the-trash">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+        </div>
+        <div class="mt-6 pt-4 border-t border-[#3A3A3D]">
+            <div class="flex justify-between mb-2">
+                <span>Subtotal:</span>
+                <span class="font-bold" id="price">$499,999.00</span>
+            </div>
+            <div class="flex justify-between mb-4">
+                <span>VAT (20%):</span>
+                <span class="font-bold" id="the-tax">$99,999.80</span>
+            </div>
+            <div class="flex justify-between mb-6 text-lg">
+                <span class="font-bold">Total:</span>
+                <span class="font-bold" id="price-after-tax">$599,998.80</span>
+            </div>
+            <button class="w-full bg-[#f87171] hover:-translate-y-1 text-black font-semibold py-3 px-6 rounded-md transition-all" id="checkout-button">
+                Checkout
+            </button>
+        </div>
+    </div>
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-[#F4F4F5] mb-4">The Art of Horology</h1>
+            <p class="text-xl text-gray-400 max-w-3xl mx-auto">Insights, stories, and expertise from the world of luxury timepieces</p>
+        </header>
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-20">
+            <article class="col-span-full bg-[#2A2A2D] rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="h-96 overflow-hidden">
+                    <img src="images/Patek.jpg" alt="Patek Philippe Grandmaster" class="w-full h-full object-cover object-center">
+                </div>
+                <div class="p-8">
+                    <div class="flex items-center mb-4">
+                        <span class="bg-[#f87171] text-black text-xs font-bold px-3 py-1 rounded-full mr-3">Featured</span>
+                        <span class="text-gray-400 text-sm">May 15, 2025</span>
+                    </div>
+                    <h2 class="text-2xl font-bold text-[#F4F4F5] mb-4">The Legacy of Patek Philippe: A Century of Horological Excellence</h2>
+                    <p class="text-gray-300 mb-6 blog-content">Delve into the storied history of one of the most prestigious watchmakers in the world. From their innovative complications to their timeless designs, discover why collectors and enthusiasts revere the Patek Philippe brand.</p>
+                    <a href="#" class="inline-block text-[#f87171] font-semibold hover:underline">Read More →</a>
+                </div>
+            </article>
+            <article class="bg-[#2A2A2D] rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="h-60 overflow-hidden">
+                    <img src="images/patek2.jpg" alt="The Art of Watch Collecting" class="w-full h-full object-cover object-center">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="text-gray-400 text-sm">April 28, 2025</span>
+                    </div>
+                    <h2 class="text-xl font-bold text-[#F4F4F5] mb-3">The Art of Watch Collecting: Building Your First Luxury Collection</h2>
+                    <p class="text-gray-300 mb-4 blog-content">Starting a luxury watch collection can be both exhilarating and daunting. We offer expert advice on selecting pieces that will stand the test of time.</p>
+                    <a href="#" class="inline-block text-[#f87171] font-semibold hover:underline">Read More →</a>
+                </div>
+            </article>
+            <article class="bg-[#2A2A2D] rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="h-60 overflow-hidden">
+                    <img src="images/patek3.jpg" alt="Understanding Watch Complications" class="w-full h-full object-cover object-center">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="text-gray-400 text-sm">April 15, 2025</span>
+                    </div>
+                    <h2 class="text-xl font-bold text-[#F4F4F5] mb-3">Understanding Watch Complications: From Chronographs to Perpetual Calendars</h2>
+                    <p class="text-gray-300 mb-4 blog-content">Explore the intricate world of watch complications and learn what makes these mechanical marvels so fascinating and valuable to collectors worldwide.</p>
+                    <a href="#" class="inline-block text-[#f87171] font-semibold hover:underline">Read More →</a>
+                </div>
+            </article>
+            <article class="bg-[#2A2A2D] rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="h-60 overflow-hidden">
+                    <img src="images/patek4.jpg" alt="The Rise of Independent Watchmakers" class="w-full h-full object-cover object-center">
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="text-gray-400 text-sm">March 30, 2025</span>
+                    </div>
+                    <h2 class="text-xl font-bold text-[#F4F4F5] mb-3">The Rise of Independent Watchmakers: Artisanal Timepieces in a Digital Age</h2>
+                    <p class="text-gray-300 mb-4 blog-content">In an era dominated by technology, independent watchmakers are crafting extraordinary mechanical pieces that celebrate traditional craftsmanship.</p>
+                    <a href="#" class="inline-block text-[#f87171] font-semibold hover:underline">Read More →</a>
+                </div>
+            </article>
+        </section>
+        <section class="bg-[#2A2A2D] rounded-lg p-8 md:p-12 mb-20">
+            <h2 class="text-3xl font-bold text-[#F4F4F5] mb-6">The Art and Science of Timekeeping: Why Luxury Watches Endure</h2>
+            
+            <div class="prose prose-lg max-w-none text-gray-300 blog-content">
+                <p class="mb-6">In a world where smartphones have made telling time effortless, luxury mechanical watches continue to captivate our imagination and desire. This paradox speaks to something deeper than mere utility—it reveals our appreciation for craftsmanship, heritage, and the poetic measurement of our most precious resource: time.</p>
+                
+                <p class="mb-6">A luxury timepiece represents the pinnacle of human ingenuity, combining centuries of tradition with cutting-edge innovation. Consider the tourbillon, invented by Abraham-Louis Breguet in 1795 to counteract the effects of gravity on pocket watches. Today, this complication serves as a symbol of watchmaking prowess, a miniature mechanical ballet that demonstrates a brand's technical mastery.</p>
+                
+                <h3 class="text-2xl font-semibold text-[#F4F4F5] my-6">The Human Touch in a Digital World</h3>
+                
+                <p class="mb-6">Each luxury watch passes through the hands of skilled artisans who have dedicated their lives to perfecting their craft. From the meticulous assembly of movements comprising hundreds of components to the hand-finishing of bridges and plates with techniques like Côtes de Genève and perlage, these timepieces are as much art as they are instruments.</p>
+                
+                <p class="mb-6">The value of a fine watch extends beyond its material components. When you wear a Patek Philippe, Audemars Piguet, or Vacheron Constantin, you carry a piece of history on your wrist—a tangible connection to generations of watchmakers who have contributed to this evolving art form.</p>
+                
+                <h3 class="text-2xl font-semibold text-[#F4F4F5] my-6">Investment Beyond Currency</h3>
+                
+                <p class="mb-6">While many luxury watches appreciate in value, their true worth transcends financial metrics. They become family heirlooms, passed down through generations, each scratch and patina telling a story of the lives they've witnessed. As the famous Patek Philippe slogan reminds us, "You never actually own a Patek Philippe. You merely look after it for the next generation."</p>
+                
+                <p class="mb-6">In our fast-paced digital age, mechanical watches offer something increasingly rare: permanence. They don't become obsolete with the next software update or require charging. With proper care, they can run for centuries, their steady tick a reminder of continuity in a world of constant change.</p>
+                
+                <p>At Montre Monde, we celebrate this extraordinary legacy of human achievement. Our curated collection represents not just timepieces, but time itself—captured, measured, and transformed into wearable art that connects past, present, and future in a perfect circle.</p>
+            </div>
+        </section>
+        <section class="bg-[#f87171] rounded-lg p-8 md:p-12 text-black mb-20">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="mb-6 md:mb-0 md:mr-10">
+                    <h2 class="text-2xl font-bold mb-2">Subscribe to Our Watch Journal</h2>
+                    <p class="text-black opacity-80">Get exclusive articles, collection highlights, and industry insights delivered monthly.</p>
+                </div>
+                <form class="w-full md:w-auto flex flex-col sm:flex-row">
+                    <input type="email" placeholder="Your email address" class="px-6 py-3 rounded-md focus:outline-none text-black mb-3 sm:mb-0 sm:mr-3 min-w-[300px]">
+                    <button class="bg-black text-white font-semibold px-6 py-3 rounded-md hover:-translate-y-1 transition-all">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+        <footer class="relative bg-[#2A2A2D] h-48 px-4 py-2">
+        <!-- Top section with newsletter and socials -->
+        <div class="flex justify-between w-full">
+            <div class="mt-2">
+                <h2 class="text-[#F4F4F5]">Subscribe to our news letter </h2>
+                <form action="" class="flex flex-col">
+                    <input type="email" class="bg-slate-100 border-2 px-4 py-2 rounded mt-2 focus:outline-none transition-all" placeholder="thevbn@exmaple.com" id="email" required >
+                    <span class="text-red-700 hidden" id="error">Please enter a valid email &times;</span>
+                    <input type="submit" class="cursor-pointer bg-[#f87171] hover:-translate-y-1 text-black font-semibold py-2 px-4 rounded-md transition-all mt-2 w-32 self-center" value="Subscribe">        
+                </form>
+            </div>
+            <div class="mt-2 text-[#f4f4f5]">
+                <h2>Follow our socials</h2>
+                <div class="flex gap-4 mt-4">
+                    <a href="#" class="text-[#F4F4F5] hover:text-[#f87171] transition-colors">
+                        <!-- X/Twitter icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-[#F4F4F5] hover:text-[#f87171] transition-colors">
+                        <!-- Facebook icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-[#F4F4F5] hover:text-[#f87171] transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-2 left-0 right-0 text-center text-[#f4f4f5] opacity-45">
+            <p>&copy; All copyright reserved to Montre Monde 2025</p>
+        </div>
+    </footer>
+    <script src="landing.js"></script>
+    <script>
+        tailwind.config = {
+            mode: 'jit',
+            theme: {
+                extend: {},
+            },
+        }
+    </script>
+</body>
+</html> 

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AthleticPosters - Motivational Wall Art</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-form">
+        <h1>Montre Monde</h1>
+        <div class="form">
+          <h1 class="title">Welcome back</h1>
+          <p class="description">Sign in to discover your next motivation</p>
+          <form action="login.php">
+            <div class="form-control">
+              <label for="email">Email address</label>
+              <input id="email" type="email" name="email"  required>
+            </div>
+            <div class="form-control">
+              <label for="password">Password</label>
+              <input id="password" type="password" name="password" required>
+            </div>
+            <div class="form-actions">
+              <div class="remember-me">
+                <input type="checkbox" name="remember-me" id="remember" >
+                <label for="remember">Remember me</label>
+              </div>
+              <a class="link text-[#F4F4F5] hover:text-[#f87171]" href="/forget-password.html">Forget password</a>
+            </div>
+            <button class="primary-btn">Sign in</button>
+          </form>
+          <div class="no-account">
+            <p>Don't have an account?</p>
+            <a class="link text-[#F4F4F5] hover:text-[#f87171]" href="signup.html">Sign up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
