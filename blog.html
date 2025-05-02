@@ -13,12 +13,12 @@
 </head>
 <body class="bg-[#1D1D1F] font-[Montserrat] p-0 m-0 overflow-x-hidden">
     <nav class="w-full p-4 flex justify-between items-center">
-        <h1 class="text-[#F4F4F5] font-bold text-2xl font-mixone">Montre Monde</h1>
+        <a href="Landing.html"><h1 class="text-[#F4F4F5] font-bold text-2xl font-mixone">Montre Monde</h1></a>
         <ul class="flex items-center">
             <li><a class="p-3 text-[#f87171] hover:text-[#f87171] transition delay-100 ease font-medium" href="blog.html">Blog</a></li>
             <li><a class="p-3 text-[#F4F4F5] hover:text-[#f87171] transition delay-100 ease font-medium" href="contact.html">Contact us</a></li>
             <li><a class="p-3 text-[#F4F4F5] hover:text-[#f87171] transition delay-100 ease font-medium" href="products.html">Products</a></li>
-            <li id="cart"><a class="p-3 text-[#F4F4F5] hover:text-[#f87171] transition delay-100 ease" href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li id="cart"><a class="p-3 text-[#F4F4F5] hover:text-[#f87171] transition delay-100 ease cursor-pointer"><i class="fa-solid fa-cart-shopping"></i></a></li>
         </ul>
     </nav>
     <div id="cart-overlay" class="hidden fixed top-0 right-0 w-80 h-screen bg-[#2A2A2D] z-10 p-5 overflow-y-auto shadow-lg text-[#F4F4F5]">
@@ -181,7 +181,6 @@
             <p>&copy; All copyright reserved to Montre Monde 2025</p>
         </div>
     </footer>
-    <script src="landing.js"></script>
     <script>
         tailwind.config = {
             mode: 'jit',
@@ -190,5 +189,6 @@
             },
         }
     </script>
+    <script src="cart.js"></script>
 </body>
 </html> 
