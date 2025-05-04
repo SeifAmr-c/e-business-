@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montre Monde - Payment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/7a642f1095.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#1D1D1F] font-[Montserrat] p-0 m-0 overflow-x-hidden flex items-center justify-center min-h-screen">
+    <section class="flex  w-80 sm:w-96 rounded-lg p-6 flex-col bg-[#2A2A2D] ">
+        <h2 class="text-white font-semibold text-center mb-6">Please enter your debit/credit card details</h2>
+        
+        <form class="flex flex-col space-y-4 w-full">
+            <div class="flex flex-col w-full">
+                <label class="text-white text-sm mb-1">Card number</label>
+                <div class="flex items-center">
+                    <input type="text" id="card-number" class="w-full p-2 rounded bg-gray-800 border border-white-900 text-white outline-none">
+                    <span class="text-orange-600 ml-2 hidden" id="mastercard"><i class="fa-brands fa-cc-mastercard text-xl"></i></span>
+                    <span class="text-blue-950 ml-2 hidden" id="visa"><i class="fa-brands fa-cc-visa"></i></span>
+                </div>
+            </div>
+            
+            <div class="flex w-full gap-4">
+                <div class="flex flex-col flex-1">
+                    <label class="text-white text-sm mb-1">Expiry date</label>
+                    <input type="text" placeholder="MM/YY" id="Expiry-date" class="w-full p-2 rounded bg-gray-800 border border-white-900 text-white outline-none">
+                    <span class="text-red-700 hidden" id="expiryerror">Error : Check Expiry date</span>
+                </div>
+                
+                <div class="flex flex-col flex-1">
+                    <label class="text-white text-sm mb-1">CVV</label>
+                    <input type="text" id="CVV" placeholder="123" maxlength="3" class="w-full p-2 rounded bg-gray-800 border border-white-900 text-white outline-none">
+                </div>
+            </div>
+            
+            <div class="flex flex-col w-full">
+                <label class="text-white text-sm mb-1">Name</label>
+                <input type="text" id="name" class="w-full p-2 rounded bg-gray-800 border border-white-900 text-white outline-none">
+                <Span class="text-red-600 hidden" id="error-name">ERROR Please check your name again </Span>
+            </div>
+            
+            <div class="flex justify-between mt-6 gap-4">
+                <input type="reset" id="reset-button" value="Reset" class="flex-1 bg-[#000] hover:bg-[#444448] text-white py-2 px-4 rounded cursor-pointer outline-none duration-500">
+                <input type="submit" id="submit-button" value="Pay Now" class="flex-1 bg-[#000] hover:bg-[#444448] text-white py-2 px-4 rounded cursor-pointer transition-all outline-none duration-500">
+            </div>
+        </form>
+    </section>
+    <script src="payment.js"></script>
+</body>
+</html>

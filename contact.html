@@ -1,195 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Montre Monde</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Montre Monde - Contact us </title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="landing.css" > 
-    <link rel="stylesheet" href="contact.css">
-</head>
-<body class="p-0 m-0 bg-[#1D1D1F] font-[Montserrat] overflow-x-hidden">
-<nav class="w-full p-4 flex justify-between items-center">
-    <a href="Landing.html"><h1 class="text-[#F4F4F5] font-bold text-2xl font-mixone">Montre Monde</h1></a>
-    <ul class="flex items-center">
-        <li><a class="p-3 text-[#F4F4F5] hover:text-[#f87171] transition delay-100 ease font-medium" href="blog.html">Blog</a></li>
-        <li><a class="p-3 text-[#F4F4F5] hover:text-[#f87171] transition delay-100 ease font-medium" href="contact.html">Contact us</a></li>
-        <li><a class="p-3 text-[#F4F4F5] hover:text-[#f87171] transition delay-100 ease font-medium" href="products.html">products</a></li>
-        <li id="cart"><a class="p-3 text-[#F4F4F5] hover:text-[#f87171] transition delay-100 ease cursor-pointer" href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-    </ul>
-</nav>
-<div id="cart-overlay" class="hidden fixed top-0 right-0 w-80 h-screen bg-[#2A2A2D] z-10 p-5 overflow-y-auto shadow-lg text-[#F4F4F5]">
-    <div class="flex justify-between items-center mb-6">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="landing.css" />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body class="p-0 m-0 bg-[#1D1D1F] font-[Montserrat] overflow-x-hidden">
+    <nav class="w-full p-4 flex justify-between items-center">
+      <a href="Landing.html"
+        ><h1 class="text-[#F4F4F5] font-bold text-2xl font-mixone">
+          Montre Monde
+        </h1></a
+      >
+      <ul class="flex items-center">
+        <li>
+          <a
+            class="p-3 text-[#F4F4F5] hover:text-[#f87171] transition delay-100 ease font-medium"
+            href="blog.html"
+            >Blog</a
+          >
+        </li>
+        <li>
+          <a
+            class="p-3 text-[#F4F4F5] hover:text-[#f87171] transition delay-100 ease font-medium"
+            href="contact.html"
+            >Contact us</a
+          >
+        </li>
+        <li>
+          <a
+            class="p-3 text-[#F4F4F5] hover:text-[#f87171] transition delay-100 ease font-medium"
+            href="products.html"
+            >products</a
+          >
+        </li>
+        <li id="cart">
+          <a
+            class="p-3 text-[#F4F4F5] hover:text-[#f87171] transition delay-100 ease"
+            href="#"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <div
+      id="cart-overlay"
+      class="hidden fixed top-0 right-0 w-80 h-screen bg-[#2A2A2D] z-10 p-5 overflow-y-auto shadow-lg text-[#F4F4F5]"
+    >
+      <div class="flex justify-between items-center mb-6">
         <h2 class="text-xl font-bold">Your Cart</h2>
         <button id="close-cart" class="text-[#F4F4F5] hover:text-[#f87171]">
-            <i class="fa-solid fa-times text-xl"></i>
+          <i class="fa-solid fa-times text-xl"></i>
         </button>
-    </div>
-    <div id="vasnihed">
-        <div class="flex items-center mb-4 pb-4 ">
-            <img src="images/patek3.jpg" alt="Watch" class="w-16 h-16 object-cover mr-4">
-            <div class="flex-1">
-                <h3 class="font-medium">5270/1R</h3>
-                <p class="text-sm text-gray-400">Rose Gold</p>
-                <p class="font-bold">$499,999.00</p>
-            </div>
-            <button class="text-[#f87171]" id="the-trash">
-                <i class="fa-solid fa-trash"></i>
-            </button>
+      </div>
+      <div id="vasnihed">
+        <div class="flex items-center mb-4 pb-4">
+          <img
+            src="images/patek3.jpg"
+            alt="Watch"
+            class="w-16 h-16 object-cover mr-4"
+          />
+          <div class="flex-1">
+            <h3 class="font-medium">5270/1R</h3>
+            <p class="text-sm text-gray-400">Rose Gold</p>
+            <p class="font-bold">$499,999.00</p>
+          </div>
+          <button class="text-[#f87171]" id="the-trash">
+            <i class="fa-solid fa-trash"></i>
+          </button>
         </div>
-    </div>
-    <div class="mt-6 pt-4 border-t border-[#3A3A3D]">
+      </div>
+      <div class="mt-6 pt-4 border-t border-[#3A3A3D]">
         <div class="flex justify-between mb-2">
-            <span>Subtotal:</span>
-            <span class="font-bold" id="price">$499,999.00</span>
+          <span>Subtotal:</span>
+          <span class="font-bold" id="price">$499,999.00</span>
         </div>
         <div class="flex justify-between mb-4">
-            <span>VAT (20%):</span>
-            <span class="font-bold" id="the-tax">$99,999.80</span>
+          <span>VAT (20%):</span>
+          <span class="font-bold" id="the-tax">$99,999.80</span>
         </div>
         <div class="flex justify-between mb-6 text-lg">
-            <span class="font-bold">Total:</span>
-            <span class="font-bold" id="price-after-tax">$599,998.80</span>
+          <span class="font-bold">Total:</span>
+          <span class="font-bold" id="price-after-tax">$599,998.80</span>
         </div>
-        <button class="w-full bg-[#f87171] hover:-translate-y-1 text-black font-semibold py-3 px-6 rounded-md transition-all" id="checkout-button">
-            Checkout
+        <button
+          class="w-full bg-[#f87171] hover:-translate-y-1 text-black font-semibold py-3 px-6 rounded-md transition-all"
+          id="checkout-button"
+        >
+          Checkout
         </button>
+        <span class="mt-2 text-sm text-gray-400 italic hidden" id="checkouterror">There is nothing to checkout please add to cart to checkout</span>
+
+      </div>
     </div>
-</div>
-    <header class="showcase">
-        <div class="showcase-content">
-            <h1>Contact Us</h1>
-            <p>Our team of horology experts is at your service to answer any questions about our exceptional timepieces.</p>
-        </div>
+    <header
+      class="h-80 bg-cover bg-center relative flex items-center justify-center text-center"
+      style="
+        background-image: url('https://images.pexels.com/photos/9978722/pexels-photo-9978722.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+      "
+    >
+      <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+      <div class="relative z-10 max-w-2xl px-4">
+        <h1 class="text-4xl font-bold mb-4">Contact Us</h1>
+        <p class="text-lg">
+          Our team of horology experts is at your service to answer any
+          questions about our exceptional timepieces.
+        </p>
+      </div>
     </header>
-    <main class="container">
-        <div class="grid">
-            <div class="contact-info">
-                <h2>Get in Touch</h2>
-                <div class="contact-methods">
-                    <div class="contact-method">
-                        <div class="icon-container">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
-                        <div>
-                            <h3>Visit Our Boutique</h3>
-                            <p>City Stars, phase 2, 1st floor, shop no.</p>
-                            <p>Nasr City, Cairo</p>
-                        </div>
-                    </div>
-                    <div class="contact-method">
-                        <div class="icon-container">
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
-                        <div>
-                            <h3>Call Us</h3>
-                            <p>Phone number (1): 01012345678</p>
-                            <p>Phone number (2): 01012345678</p>
-                        </div>
-                    </div>
-                    <div class="contact-method">
-                        <div class="icon-container">
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
-                        <div>
-                            <h3>Email Us</h3>
-                            <p>Our Email: info@montremonde.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-method">
-                        <div class="icon-container">
-                            <i class="fa-solid fa-clock"></i>
-                        </div>
-                        <div>
-                            <h3>Opening Hours</h3>
-                            <p>Sunday - Thursday: 9am - 5pm</p>
-                        </div>
-                    </div>
-                </div>
+    <main class="max-w-7xl mx-auto px-4 py-12">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div>
+          <h2 class="text-3xl font-semibold mb-8">Get in Touch</h2>
+          <div class="flex flex-col gap-6 mb-12">
+            <div class="flex items-start">
+              <div
+                class="w-12 h-12 bg-primary-background rounded-full flex items-center justify-center mr-4 transition-all duration-300 hover:scale-110 hover:bg-red-400 hover:bg-opacity-20"
+              >
+                <i class="fa-solid fa-location-dot text-red-400"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold mb-1">Visit Our Boutique</h3>
+                <p class="text-gray-400">
+                  City Stars, phase 2, 1st floor, shop no.
+                </p>
+                <p class="text-gray-400">Nasr City, Cairo</p>
+              </div>
             </div>
-            <div class="contact-form">
-                <h2>Send Us a Message</h2>
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" placeholder="John Doe" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number (Optional)</label>
-                        <input type="tel" id="phone" name="phone" placeholder="01012345678">
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" placeholder="Subject">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
-                    </div>
-                    <div class="form-group checkbox-group">
-                        <input type="checkbox" id="newsletter" name="newsletter">
-                        <label for="newsletter">Subscribe to our newsletter for exclusive updates and offers</label>
-                    </div>
-                    <button type="submit">Send Message</button>
-                </form>
+            <div class="flex items-start">
+              <div
+                class="w-12 h-12 bg-primary-background rounded-full flex items-center justify-center mr-4 transition-all duration-300 hover:scale-110 hover:bg-red-400 hover:bg-opacity-20"
+              >
+                <i class="fa-solid fa-phone text-red-400"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold mb-1">Call Us</h3>
+                <p class="text-gray-400">Phone number (1): 01012345678</p>
+                <p class="text-gray-400">Phone number (2): 01012345678</p>
+              </div>
             </div>
+            <div class="flex items-start">
+              <div
+                class="w-12 h-12 bg-primary-background rounded-full flex items-center justify-center mr-4 transition-all duration-300 hover:scale-110 hover:bg-red-400 hover:bg-opacity-20"
+              >
+                <i class="fa-solid fa-envelope text-red-400"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold mb-1">Email Us</h3>
+                <p class="text-gray-400">Our Email: info@montremonde.com</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div
+                class="w-12 h-12 bg-primary-background rounded-full flex items-center justify-center mr-4 transition-all duration-300 hover:scale-110 hover:bg-red-400 hover:bg-opacity-20"
+              >
+                <i class="fa-solid fa-clock text-red-400"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold mb-1">Opening Hours</h3>
+                <p class="text-gray-400">Sunday - Thursday: 9am - 5pm</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55234.30028043069!2d31.266066924095053!3d30.090068654508894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583e13d8e2b2fb%3A0xf81a61f156f55adc!2sCity%20Stars%20Mall!5e0!3m2!1sen!2seg!4v1745701737068!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="bg-primary-background px-8 py-9 rounded-lg shadow-md">
+          <h2 class="text-3xl font-semibold mb-6">Send Us a Message</h2>
+          <div id="success-message" class="bg-[#05b947d9] p-3 mb-5 rounded-md hidden">
+            <h1 class="text-white">Message sent successfully!</h1>
+          </div>
+          <form id="contactForm">
+            <div class="mb-6">
+              <label for="name" class="block mb-2 font-medium">Your Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="John Doe"
+                required
+                class="w-full py-3 px-4 bg-input-background border border-gray-600 rounded-md text-gray-100 transition-all duration-300 focus:outline-none focus:border-red-400 focus:ring-2 focus:ring-red-400 focus:ring-opacity-40 focus:-translate-y-0.5"
+              />
+            </div>
+            <div class="mb-6">
+              <label for="email" class="block mb-2 font-medium"
+                >Your Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="john@example.com"
+                required
+                class="w-full py-3 px-4 bg-input-background border border-gray-600 rounded-md text-gray-100 transition-all duration-300 focus:outline-none focus:border-red-400 focus:ring-2 focus:ring-red-400 focus:ring-opacity-40 focus:-translate-y-0.5"
+              />
+            </div>
+            <div class="mb-6">
+              <label for="phone" class="block mb-2 font-medium"
+                >Phone Number (Optional)</label
+              >
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="01012345678"
+                class="w-full py-3 px-4 bg-input-background border border-gray-600 rounded-md text-gray-100 transition-all duration-300 focus:outline-none focus:border-red-400 focus:ring-2 focus:ring-red-400 focus:ring-opacity-40 focus:-translate-y-0.5"
+              />
+            </div>
+            <div class="mb-6">
+              <label for="subject" class="block mb-2 font-medium"
+                >Subject</label
+              >
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+                class="w-full py-3 px-4 bg-input-background border border-gray-600 rounded-md text-gray-100 transition-all duration-300 focus:outline-none focus:border-red-400 focus:ring-2 focus:ring-red-400 focus:ring-opacity-40 focus:-translate-y-0.5"
+              />
+            </div>
+            <div class="mb-6">
+              <label for="message" class="block mb-2 font-medium"
+                >Your Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="How can we help you?"
+                required
+                class="w-full py-3 px-4 bg-input-background border border-gray-600 rounded-md text-gray-100 transition-all duration-300 focus:outline-none focus:border-red-400 focus:ring-2 focus:ring-red-400 focus:ring-opacity-40 focus:-translate-y-0.5"
+              ></textarea>
+            </div>
+            <div class="mb-6 flex items-center gap-2">
+              <input
+                type="checkbox"
+                id="newsletter"
+                name="newsletter"
+                class="w-auto"
+              />
+              <label for="newsletter" class="text-sm font-medium"
+                >Subscribe to our newsletter for exclusive updates and
+                offers</label
+              >
+            </div>
+            <button
+              type="submit"
+              class="w-full py-3 px-6 bg-red-400 text-black font-semibold border-none rounded-md cursor-pointer transition-all duration-300 hover:bg-red-500 hover:-translate-y-0.5 relative overflow-hidden"
+            >
+              Send Message
+            </button>
+          </form>
         </div>
-        <div class="faq-grid">
-            <div class="faq-item">
-                <h3>What is your return policy?</h3>
-                <p>We offer a 30-day return policy for unworn watches with original packaging and documentation. Custom orders are final sale.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Do you offer international shipping?</h3>
-                <p>Yes, we ship worldwide with full insurance and tracking. Customs duties and taxes may apply depending on your country.</p>
-            </div>
-            <div class="faq-item">
-                <h3>How long is the warranty period?</h3>
-                <p>All our watches come with a 5-year international warranty covering manufacturing defects. This can be extended for select models.</p>
-            </div>
-            <div class="faq-item">
-                <h3>Do you offer watch servicing?</h3>
-                <p>Yes, our certified watchmakers provide complete servicing for all brands we sell. We recommend servicing every 3-5 years.</p>
-            </div>
+      </div>
+      <div class="mt-16 rounded-lg overflow-hidden h-96 shadow-md">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55234.30028043069!2d31.266066924095053!3d30.090068654508894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583e13d8e2b2fb%3A0xf81a61f156f55adc!2sCity%20Stars%20Mall!5e0!3m2!1sen!2seg!4v1745701737068!5m2!1sen!2seg"
+          class="w-full h-full"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-16">
+        <div
+          class="bg-primary-background p-6 rounded-lg shadow-md transition-all duration-300 hover:border-l-4 hover:border-red-400 hover:translate-x-1"
+        >
+          <h3 class="text-xl font-semibold mb-3">
+            What is your return policy?
+          </h3>
+          <p class="text-gray-400">
+            We offer a 30-day return policy for unworn watches with original
+            packaging and documentation. Custom orders are final sale.
+          </p>
         </div>
+        <div
+          class="bg-primary-background p-6 rounded-lg shadow-md transition-all duration-300 hover:border-l-4 hover:border-red-400 hover:translate-x-1"
+        >
+          <h3 class="text-xl font-semibold mb-3">
+            Do you offer international shipping?
+          </h3>
+          <p class="text-gray-400">
+            Yes, we ship worldwide with full insurance and tracking. Customs
+            duties and taxes may apply depending on your country.
+          </p>
+        </div>
+        <div
+          class="bg-primary-background p-6 rounded-lg shadow-md transition-all duration-300 hover:border-l-4 hover:border-red-400 hover:translate-x-1"
+        >
+          <h3 class="text-xl font-semibold mb-3">
+            How long is the warranty period?
+          </h3>
+          <p class="text-gray-400">
+            All our watches come with a 5-year international warranty covering
+            manufacturing defects. This can be extended for select models.
+          </p>
+        </div>
+        <div
+          class="bg-primary-background p-6 rounded-lg shadow-md transition-all duration-300 hover:border-l-4 hover:border-red-400 hover:translate-x-1"
+        >
+          <h3 class="text-xl font-semibold mb-3">
+            Do you offer watch servicing?
+          </h3>
+          <p class="text-gray-400">
+            Yes, our certified watchmakers provide complete servicing for all
+            brands we sell. We recommend servicing every 3-5 years.
+          </p>
+        </div>
+      </div>
     </main>
-    <footer class="relative flex flex-col h-auto min-h-[12rem] px-4 py-4 mt-8 items-center">
-        <div class="flex gap-4 mb-4">
-            <a href="#" class="text-[#F4F4F5] hover:text-[#f87171] transition-colors">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                </svg>
-            </a>
-            <a href="#" class="text-[#F4F4F5] hover:text-[#f87171] transition-colors">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                </svg>
-            </a>
-            <a href="#" class="text-[#F4F4F5] hover:text-[#f87171] transition-colors">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                </svg>
-            </a>
-        </div>
-        <div class="text-white text-center max-w-2xl mb-4">
-            <p>A luxury timepiece represents the pinnacle of human ingenuity, combining centuries of tradition with cutting-edge innovation.</p>
-        </div>
-        <hr class="w-full border-[#3A3A3D] my-4">
-        <div class="text-center text-[#f4f4f5] opacity-45">
-            <p>&copy; All copyright reserved to Montre Monde 2025</p>
-        </div>
+    <footer
+      class="relative flex flex-col h-auto min-h-[12rem] px-4 py-4 mt-8 items-center"
+    >
+      <div class="flex gap-4 mb-4">
+        <a
+          href="#"
+          class="text-[#F4F4F5] hover:text-[#f87171] transition-colors"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+            />
+          </svg>
+        </a>
+        <a
+          href="#"
+          class="text-[#F4F4F5] hover:text-[#f87171] transition-colors"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+            />
+          </svg>
+        </a>
+        <a
+          href="#"
+          class="text-[#F4F4F5] hover:text-[#f87171] transition-colors"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+            />
+          </svg>
+        </a>
+      </div>
+      <div class="text-white text-center max-w-2xl mb-4">
+        <p>
+          A luxury timepiece represents the pinnacle of human ingenuity,
+          combining centuries of tradition with cutting-edge innovation.
+        </p>
+      </div>
+      <hr class="w-full border-[#3A3A3D] my-4" />
+      <div class="text-center text-[#f4f4f5] opacity-45">
+        <p>&copy; All copyright reserved to Montre Monde 2025</p>
+      </div>
     </footer>
-<script src="cart.js"></script>
-</body>
+    <script src="contact.js"></script>
+    <script src="cart.js"></script>
+    <script>
+      tailwind.config = {
+        mode: "jit",
+        theme: {
+          extend: {
+            colors: {
+              "primary-background": "#2A2A2D",
+              "input-background": "#3A3A3D",
+            },
+          },
+        },
+      };
+    </script>
+  </body>
 </html>

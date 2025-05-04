@@ -20,5 +20,15 @@ trash.addEventListener('click', function() {
         document.getElementById('the-tax').textContent = '$0.00';
         document.getElementById('price-after-tax').textContent = '$0.00';
         document.getElementById('checkout-button').textContent = 'Cart is empty';
+        buttonerror.classList.remove('hidden') ; 
     }, 500);
 });
+
+const button = document.getElementById('checkout-button') ;
+const buttonerror = document.getElementById('checkouterror') ; 
+
+button.addEventListener('click' , () => {
+    if (button.textContent.trim() === "Checkout") {
+        window.location.href = "payment.html";
+    }
+})
