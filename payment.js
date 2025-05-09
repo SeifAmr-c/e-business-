@@ -101,10 +101,13 @@ expiry.addEventListener('input', () => {
         expiry.classList.remove('border-green-900');
         return; 
     } else {
-        
+        const theYear= new Date().getFullYear(); 
+        const theyear2 = String(theYear).slice(-2); 
+        const currentMonth = new Date().getMonth() + 1;
+
         const [month, year] = value.split('/').map(Number);
 
-        if (year < 25) {
+        if (year < 25 || month < currentMonth) {
             error.classList.remove('hidden'); 
             expiry.classList.add('border-red-900');
             expiry.classList.remove('border-green-900');
@@ -116,5 +119,20 @@ expiry.addEventListener('input', () => {
     }
 
 });
+const form = document.querySelector('form');
+form.addEventListener('submit', function (e) {
+    const cardValid = card.classList.contains('border-green-900');
+    const cvvValid = cvv.classList.contains('border-green-900');
+    const nameValid = thename.classList.contains('border-green-900');
+    const expiryValid = expiry.classList.contains('border-green-900');
 
+    if (!cardValid || !cvvValid || !nameValid || !expiryValid) {
+        e.preventDefault(); 
+        alert("Please Check The Infomration You Have Given Again.");
+    } else {
+        e.preventDefault(); 
+        alert("Payment successful! Redirecting you to the home page...");
+        window.location.href = "landing.html"; 
+    }
+});
 
