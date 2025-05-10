@@ -51,7 +51,7 @@ function renderCart() {
                 <div class="flex-1">
                     <h3 class="font-medium">${item.name}</h3>
                     <p class="text-sm text-gray-400">${item.description}</p>
-                    <p class="font-bold">$${item.price.toLocaleString()}</p>
+                    <p class="font-bold">$${item.price.toFixed(2)}</p>
                 </div>
                 <button class="text-[#f87171]" onclick="removeFromCart(${index})">
                     <i class="fa-solid fa-trash"></i>
@@ -64,9 +64,9 @@ function renderCart() {
     const tax = subtotal * 0.2;
     const total = subtotal + tax;
 
-    priceSpan.textContent = `$${subtotal}`;
-    taxSpan.textContent = `$${tax}`;
-    totalSpan.textContent = `$${total}`;
+    priceSpan.textContent = `$${subtotal.toFixed(2)}`;
+    taxSpan.textContent = `$${tax.toFixed(2)}`;
+    totalSpan.textContent = `$${total.toFixed(2)}`;
 
     if (cart.length === 0) {
         checkoutButton.textContent = 'Cart is empty';
